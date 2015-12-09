@@ -13,11 +13,7 @@
 @interface ASMain : NSObject
 @property (nonatomic, assign) NSString* operations;
 
-@property (nonatomic, assign) NSInteger firstNumber; //currentOperand
-//@property (nonatomic, assign) NSInteger secondNumber;
-//@property (nonatomic, assign) CGFloat secondNumber;
-
-//@property (nonatomic, assign) CGFloat resultNumber;
+@property (nonatomic, assign) NSInteger firstNumber;
 
 - (CGFloat)secondNumber:(CGFloat)number;
 
