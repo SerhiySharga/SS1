@@ -21,8 +21,8 @@
         result /= number;
         
     }
-    else if ([self.operations isEqualToString:@"+"]) {
-        result += number;
+    else if ([self.operations isEqualToString:@"*"]) {
+        result *= number;
         
     }
     else if ([self.operations isEqualToString:@"-"]) {
