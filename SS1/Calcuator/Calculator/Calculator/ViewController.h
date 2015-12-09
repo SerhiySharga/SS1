@@ -10,17 +10,8 @@
 
 @interface ViewController : UIViewController {
     
- //   IBOutlet UILabel *displayLabel;
     
-    
-    
-
-
 }
-
-- (IBAction)butPress:(UIButton *)sender;
-
-//- (IBAction)clear:(id)sender;
 
 
 @end

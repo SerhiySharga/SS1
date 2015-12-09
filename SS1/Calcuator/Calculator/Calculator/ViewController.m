@@ -7,9 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "ASMain.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *labelResult;
+
+@property (strong, nonatomic) IBOutlet UILabel *resultView;
+@property (strong, nonatomic) ASMain *main;
+@property (nonatomic) BOOL 	nextOperation;
 
 @end
 
@@ -17,17 +21,55 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.main =	[[ASMain alloc] init];
+
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)equalPush:(UIButton *)sender {
 
-- (IBAction)butPress:(UIButton *)sender {
-    long taga = sender.tag;
-    
-    self.labelResult.text = [NSString stringWithFormat:@"%li",taga];
+   
+    CGFloat result = [self.main secondNumber:self.resultView.text.floatValue];
+    self.resultView.text = 	[NSString stringWithFormat:@"%f", result];
+    self.main.firstNumber = result;
+
 }
+
+
+
+- (IBAction)operationPush:(UIButton *)sender {
+    
+    self.main.operations = sender.titleLabel.text;
+    self.main.firstNumber = self.resultView.text.floatValue;
+    
+    self.nextOperation = YES;
+}
+
+
+
+- (IBAction)numberPush:(UIButton *)sender {
+    
+    NSString *result = self.resultView.text;
+    if ([result isEqualToString:@"0"] || self.nextOperation) {
+        	result = @"";
+        self.nextOperation = NO;
+    }
+    result = [result stringByAppendingString:sender.titleLabel.text];
+    
+    self.resultView.text = result;
+    
+}
+
+- (IBAction)clearPush:(UIButton *)sender {
+    
+    self.resultView.text = @"0";
+    self.main.operations = nil;
+}
+
+
 @end

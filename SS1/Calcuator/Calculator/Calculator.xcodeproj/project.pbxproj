@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84DD18851C15AC8D006E3790 /* ASMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD18841C15AC8D006E3790 /* ASMain.m */; };
 		84E16A481C047B51005CA6EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E16A471C047B51005CA6EB /* main.m */; };
 		84E16A4B1C047B51005CA6EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E16A4A1C047B51005CA6EB /* AppDelegate.m */; };
 		84E16A4E1C047B51005CA6EB /* Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84E16A4C1C047B51005CA6EB /* Calculator.xcdatamodeld */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84DD18831C15AC8D006E3790 /* ASMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMain.h; sourceTree = "<group>"; };
+		84DD18841C15AC8D006E3790 /* ASMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMain.m; sourceTree = "<group>"; };
 		84E16A421C047B51005CA6EB /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E16A461C047B51005CA6EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84E16A471C047B51005CA6EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 		84E16A441C047B51005CA6EB /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				84DD18831C15AC8D006E3790 /* ASMain.h */,
+				84DD18841C15AC8D006E3790 /* ASMain.m */,
 				84E16A491C047B51005CA6EB /* AppDelegate.h */,
 				84E16A4A1C047B51005CA6EB /* AppDelegate.m */,
 				84E16A4F1C047B51005CA6EB /* ViewController.h */,
@@ -223,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E16A4B1C047B51005CA6EB /* AppDelegate.m in Sources */,
+				84DD18851C15AC8D006E3790 /* ASMain.m in Sources */,
 				84E16A481C047B51005CA6EB /* main.m in Sources */,
 				84E16A511C047B51005CA6EB /* ViewController.m in Sources */,
 				84E16A4E1C047B51005CA6EB /* Calculator.xcdatamodeld in Sources */,
@@ -420,6 +426,7 @@
 				84E16A6A1C047B51005CA6EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84E16A6B1C047B51005CA6EB /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +435,7 @@
 				84E16A6D1C047B51005CA6EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
